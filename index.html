@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Api Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="game">
+        <h1>Two-Player Trivia Game</h1>
+        
+        
+        <div id="category-selection">
+            <h3>Select a Category</h3>
+            <select id="category-select"></select>
+            <button class="btn" id="start-button">Start Game</button>
+        </div>
+        
+        <div id="players">
+            <div id="player1">
+                <h2>Player 1</h2>
+                <div>Score: <span id="player1-score">0</span></div>
+            </div>
+            <div id="player2">
+                <h2>Player 2</h2>
+                <div>Score: <span id="player2-score">0</span></div>
+            </div>
+        </div>
+        
+        <div id="turn-indicator">Player 1's Turn</div>
+        
+        <div id="question-container">
+            <div id="question"></div>
+            <div id="answer-buttons" class="btn-container"></div>
+        </div>
+        
+        <button class="btn" id="next-button" style="display:none;">Next</button>
+        <div id="final-score"></div>
+        
+        <button class="btn" id="restart-button">End Game</button>
+        <button class="btn" id="end-button">End Game</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
